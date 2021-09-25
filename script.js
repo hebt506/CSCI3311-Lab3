@@ -50,8 +50,8 @@ async function charting() {
 	d3.csv('buildings.csv', d3.autoType).then(data=>{
 		// console.log('buildings', data);
 		
-		buildings = data.sort((a, b)=>b.height_m - a.height_m);
-		console.log(buildings)
+		buildings = data.sort((a, b) => b.height_m - a.height_m);
+		// console.log(buildings)
 		const width = 600;
 		const height = 600;
 		const svg = d3.select('.bar-plot')
@@ -68,7 +68,7 @@ async function charting() {
 		.attr("width",(d, i) => d.height_px)
 		.attr("height", 45)
 		.attr("fill", "blue")
-		.on("click", function(d,i) {
+		.on("click", function(d, i) {
 			// console.log("click!")
 			d3.select(".image").attr('src', "img/" + i.image)
 			d3.select(".building-name").text(i.building)
