@@ -3,22 +3,71 @@
   <head>
     <meta charset="utf-8" />
     <meta name="description" content="" />
+    
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.css">
+
     <title>Population in European countries</title>
     <script defer src="https://d3js.org/d3.v7.min.js"></script>
     <script defer src="script.js"></script>
     
   </head>
   <body>
+
     <div class="container">
-        <h2>
-            Population in European countries
-        </h2>
-        <div class="city-count">
-          
-        </div>
+      <h2>
+        Population in European countries
+      </h2>
+      <div class="row">
+        <div class="city-count"></div>
         <div class="population-plot"></div>
+      </div>
+
+      <h2>
+        Highest buildings around the world
+      </h2>
+
+      <div class="row">
+        <div class="column">
+          <div class="bar-plot"></div>
+        </div>
+  
+        <div class="column">
+          <img class="image"/>
+        </div>
+  
+        <div class="column">
+          <h4 class="building-name"></h4>
+          <table>
+            <tbody>
+              <tr>
+                <td>Height</td>
+                <td><span class="height"></span> m</td>
+              </tr>
+              <tr>
+                <td>Completed</td>
+                <td><span class="completed"></span></td>
+              </tr>
+              <tr>
+                <td>City</td>
+                <td><span class="city"></span></td>
+              </tr>
+              <tr>
+                <td>Country</td>
+                <td><span class="country"></span></td>
+              </tr>
+              <tr>
+                <td>Floors</td>
+                <td><span class="floors"></span></td>
+              </tr>
+          
+            </tbody>
+          </table>
+        </div>
+
+      </div>
+
     </div>
-   
+
   </body>
 </html>
